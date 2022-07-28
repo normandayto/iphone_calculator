@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.iphone {
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(0,0,0,0.5);
+}
+
+.input_display {
+  width: 288px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#show_number {
+  width: 275px;
+  height: 100%;
+  outline: none;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  overflow-y:hidden;
+  text-align: right;
+  resize: none;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px 0px 0px 0px;
+  color: #dbd8d3;
+}
+
+#input_number {
+  width: 275px;
+  height: 100px;
+  outline: none;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 40px;
+  font-family: sans-serif;
+  overflow-y: hidden;
+  text-align: right;
+  resize: none;
+}
+
+/**button design**/
+.keypads {
+  display: flex;
+  flex-direction: row;
+}
+
+.keypads_left_specialOp {
+  display: flex;
+  flex-direction: row;
+}
+
+/*button size all using multiple classes*/
+.keypads_custom_specialOp,
+.keypads_custom_number,
+.keypads_custom_zeroDot,
+.keypads_custom_operations {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 5px;
+}
+
+.keypads_custom_specialOp {
+  background-color: rgb(147, 142, 142);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.keypads_custom_number {
+  background-color: rgb(37, 29, 29);
+  font-size: 30px;
+}
+
+.keypads_custom_zeroDot {
+  background-color: rgb(37, 29, 29);
+  font-size: 30px;
+}
+
+.keypads_custom_operations {
+  background-color: orange;
+  color: white;
+  font-size: 30px;
+}
+
+.keypads_left_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 218px;
+  color: white;
+}
+
+.keypads_left_zeroDot {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+#keypads_custom_zeroDot_id {
+  width: 130px;
+  align-items: left;
+  text-align: left;
+}
+
+.keypads_right {
+  display: flex;
+  flex-direction: column;
+}

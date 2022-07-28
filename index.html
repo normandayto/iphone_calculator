@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iphone calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="iphone">
+
+      <!--display the number-->
+      <div class="input_display">
+        <textarea cols="40" rows="7" id="show_number"></textarea>
+        <input type="text" id="input_number">
+      </div>
+      
+      <!--calculator button-->
+      <div class="keypads">
+
+        <!--left button-->
+        <div class="keypads_left">
+
+          <!--top button-->
+          <div class="keypads_left_specialOp">
+            <div class="keypads_custom_specialOp" id="clear_input">AC</div>
+            <div class="keypads_custom_specialOp" onclick="display('+/-')">+/-</div>
+            <div class="keypads_custom_specialOp" onclick="display('%')">%</div>
+          </div>
+
+          <!--middle button number-->
+          <div class="keypads_left_number">
+            <div class="keypads_custom_number" onclick="display('9')">9</div>
+            <div class="keypads_custom_number" onclick="display('8')">8</div>
+            <div class="keypads_custom_number" onclick="display('7')">7</div>
+
+            <div class="keypads_custom_number" onclick="display('6')">6</div>
+            <div class="keypads_custom_number" onclick="display('5')">5</div>
+            <div class="keypads_custom_number" onclick="display('4')">4</div>
+
+            <div class="keypads_custom_number" onclick="display('3')">3</div>
+            <div class="keypads_custom_number" onclick="display('2')">2</div>
+            <div class="keypads_custom_number" onclick="display('1')">1</div>
+          </div>
+
+          <!--bottom button left-->
+          <div class="keypads_left_zeroDot">
+            <div class="keypads_custom_zeroDot" id="keypads_custom_zeroDot_id" onclick="display('0')">0</div>
+            <div class="keypads_custom_zeroDot" onclick="display('.')">.</div>
+          </div>
+        </div>
+
+        <!--right button-->
+        <div class="keypads_right">
+          <div class="keypads_custom_operations" onclick="display('/')">÷</div>
+          <div class="keypads_custom_operations" onclick="display('*')">x</div>
+          <div class="keypads_custom_operations" onclick="display('-')">-</div>
+          <div class="keypads_custom_operations" onclick="display('+')">+</div>
+
+          <!--answer button-->
+          <div class="keypads_custom_operations" onclick="display_Answer()">=</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--javascript file link html file-->
+  <script src="calc.js"></script>
+</body>
+</html>
